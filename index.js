@@ -7,6 +7,11 @@ for (let i = 0; i < randomArr.length; i++) {
 // or:
 // randomArray.forEach((item, index) => console.log(`${index}: ${item}`, item));
 
+// or for..of:
+for (let item of randomArr) {
+  console.log(item);
+}
+
 // ------------------------------------------------------------------------------------------------
 // 2. Дан масив з цілими числами. За допомогою циклу вивести елементи масива, які є парними числами
 const numbersArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -18,6 +23,13 @@ for (let i = 0; i < numbersArr.length; i++) {
 // or:
 // const evenNumbersArr = numbersArr.filter((item) => item % 2 === 0);
 // console.log(evenNumbersArr);
+
+// or for..of:
+for (let num of numbersArr) {
+  if (num % 2 === 0) {
+    console.log(num);
+  }
+}
 
 // ------------------------------------------------------------------------------------------------
 // (завдання на методи масивів):
